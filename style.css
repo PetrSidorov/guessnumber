@@ -21,16 +21,22 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  height: 35vh;
+  height: 45vh;
   border-bottom: 7px solid #eee;
 }
 
 main {
-  height: 65vh;
+  margin-top: 6rem;
   color: #eee;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+main > section {
+  margin-bottom: 2rem;
 }
 
 .left {
@@ -69,17 +75,20 @@ h1 {
   transform: translate(-50%, 50%);
 }
 
-.between {
-  font-size: 1.4rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+.top{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem
 }
 
-.again {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
+.top > * {
+  margin-top: 2rem;
+}
+
+.between {
+  font-size: 1.4rem;
 }
 
 .guess {
